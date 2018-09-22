@@ -1,0 +1,43 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <p>This is a text scrambler. It will save the word to the browsers local storage. </p>
+
+    <div id="Align">
+        <p>Input Text Here:</p><textarea id="input" name="name"></textarea><br>
+        
+        <button type="button" id="test" onclick="StoreInput()">Scramble The Input</button>
+
+        <p>Scrambling the input will also save the original string to local storage. </p>
+
+        <p>Output:</p><br><br>
+
+        <p>Pig Latin: Translates the word into Pig Latin</p>
+
+        <textarea readonly id="PigLatin"></textarea><br>
+
+        <p>Backwards: Reverses the word</p>
+
+        <textarea readonly id="Reverse"></textarea><br>
+
+        <p> Saved: Will grab the word from local storage and display it as it originally was</p>
+
+        <textarea readonly id="Original"></textarea><br>
+
+        <p>Press this button to Unscramble!</p>
+        <button type="button" onclick="getOriginal() " id="getOriginalButton">Unscramble The Input</button>
+    </div>
+   
+</body>
+
+</html>
